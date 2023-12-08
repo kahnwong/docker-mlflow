@@ -1,2 +1,2 @@
 start:
-	mlflow server
+	mlflow server --port 8080
