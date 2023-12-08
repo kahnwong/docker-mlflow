@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "docker-mlflow"
+version = "0.1.0"
+description = ""
+authors = ["kahnwong <karn@karnwong.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2-binary = "^2.9.9"
+boto3 = "^1.33.10"
+mlflow = "^2.9.1"
+
+[tool.poetry.group.dev.dependencies]
+mlflow = "^2.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
