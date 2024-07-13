@@ -1,9 +1,9 @@
 import os
 
-import dotenv
 import mlflow
 import numpy as np
 import pandas as pd
+from dotenv import load_dotenv
 from mlflow.models import infer_signature
 from sklearn import datasets
 from sklearn.linear_model import LogisticRegression
@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
-dotenv.load_dotenv()
+load_dotenv()
 
 
 ################
@@ -81,10 +81,24 @@ with mlflow.start_run():
     signature = infer_signature(X_train, lr.predict(X_train))
 
     # Log the model
+    model_name = "iris_model"
     model_info = mlflow.sklearn.log_model(
         sk_model=lr,
-        artifact_path="iris_model",
+        artifact_path=model_name,
         signature=signature,
         input_example=X_train,
         registered_model_name="tracking-quickstart",
+    )
+
+    # Evaluate
+    ## prep data
+    X_test.insert(0, "target", y_test)
+
+    ## evaluate
+    result = mlflow.evaluate(
+        model=mlflow.get_artifact_uri(model_name),
+        data=X_test,
+        targets="target",
+        model_type="regressor",
+        evaluators=["default"],
     )
