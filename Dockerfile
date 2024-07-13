@@ -1,6 +1,7 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # install aws cli
+# hadolint ignore=DL3008
 RUN apt-get update \
     && apt-get install -y curl unzip --no-install-recommends \
     && apt-get clean \
@@ -11,6 +12,7 @@ RUN apt-get update \
     && rm awscliv2.zip
 
 # install mlflow
+# hadolint ignore=DL3045
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
