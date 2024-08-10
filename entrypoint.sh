@@ -38,7 +38,7 @@ fi
 echo "Test file content" >test_file.txt
 
 if [ -n "$MLFLOW_S3_ENDPOINT_URL" ]; then
-	aws s3 --endpoint-url "$MLFLOW_S3_ENDPOINT_URL" ls $DEFAULT_ARTIFACT_ROOT >/dev/null 2>&1
+	aws s3 --endpoint-url "$MLFLOW_S3_ENDPOINT_URL" ls "$DEFAULT_ARTIFACT_ROOT" >/dev/null 2>&1
 	READ_PERMISSION=$?
 
 	aws s3 --endpoint-url "$MLFLOW_S3_ENDPOINT_URL" cp test_file.txt "$DEFAULT_ARTIFACT_ROOT/test_file.txt" >/dev/null 2>&1
