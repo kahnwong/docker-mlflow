@@ -1,4 +1,14 @@
-FROM python:3.12-slim
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+
+# Export to requirements.txt
+# hadolint ignore=DL3045
+COPY pyproject.toml uv.lock ./
+RUN uv export --no-hashes --no-dev --no-emit-project --output-file=requirements.txt
+
+# install mlflow
+# hadolint ignore=DL3045
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # install aws cli
 # hadolint ignore=DL3008
@@ -10,11 +20,6 @@ RUN apt-get update \
     && ./aws/install \
     && rm -rf ./aws \
     && rm awscliv2.zip
-
-# install mlflow
-# hadolint ignore=DL3045
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
 
 # app
 WORKDIR /opt/mlflow
