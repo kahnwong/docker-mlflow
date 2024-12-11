@@ -10,7 +10,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-
 load_dotenv()
 
 
@@ -40,7 +39,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 params = {
     "solver": "lbfgs",
     "max_iter": 1000,
-    "multi_class": "auto",
     "random_state": 8888,
 }
 
@@ -59,7 +57,7 @@ with mlflow.start_run():
 
     # Train the model
     lr = LogisticRegression(**params)
-    lr.fit(X_train, y_train)
+    lr.fit(X_train, y_train["target"])
 
     # log validation data
     mlflow.log_table(data=y_train, artifact_file="validation.json")
