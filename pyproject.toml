@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "boto3==1.36.11",
-    "mlflow==2.19.0",
+    "mlflow==2.20.1",
     "psycopg2-binary==2.9.10",
 ]
 
