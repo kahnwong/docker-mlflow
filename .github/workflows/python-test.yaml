@@ -17,7 +17,7 @@ jobs:
         uses: astral-sh/setup-uv@v6
       - name: Export requirements.txt
         run: |
-          uv export --no-hashes --no-dev --no-emit-project --output-file=requirements.txt
+          uv export --no-hashes --no-emit-project --output-file=requirements.txt
       - name: Setup Python
         uses: actions/setup-python@v5
         with:

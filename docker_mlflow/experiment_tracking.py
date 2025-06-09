@@ -3,15 +3,11 @@ import os
 import mlflow
 import numpy as np
 import pandas as pd
-from dotenv import load_dotenv
 from mlflow.models import infer_signature
 from sklearn import datasets
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-
-load_dotenv()
-
 
 ################
 # prep
