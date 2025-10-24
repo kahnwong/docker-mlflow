@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "boto3==1.40.57",
+    "boto3==1.40.59",
     "mlflow==3.5.1",
     "psycopg2-binary==2.9.11",
 ]
