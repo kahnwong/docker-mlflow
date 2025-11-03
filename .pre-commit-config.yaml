@@ -15,7 +15,7 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
   - repo: https://github.com/kahnwong/pre-commit
-    rev: "00af229"
+    rev: "b144118"
     hooks:
       - id: ruff-check
       - id: ruff-format
@@ -28,6 +28,4 @@ repos:
           - DL3018
           - --ignore
           - DL3027
-      - id: shellcheck
-      - id: shfmt
-      - id: trufflehog
+      - id: kingfisher
