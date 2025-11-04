@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "boto3==1.40.57",
+    "boto3==1.40.66",
     "flask==3.1.1", # vuln
     "h11==0.16.0", # vuln
     "jinja2==3.1.6", # vuln
