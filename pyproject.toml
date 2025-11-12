@@ -17,8 +17,8 @@ dependencies = [
     "urllib3==2.5.0", # vuln
 ]
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "litellm[proxy]==1.79.1",  # this version works
     "openai>=2.7.2",
     "scikit-learn==1.7.2",
