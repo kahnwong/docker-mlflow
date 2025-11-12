@@ -41,18 +41,17 @@ def predict_fn(question: str) -> str:
 
 
 # ----- evaluation -----
-## use gemini via litellm
-## required env: `GEMINI_API_KEY`
+## use ollama via litellm
 mlflow.set_experiment("LLM Evaluation")
 results = mlflow.genai.evaluate(
     data=dataset,
     predict_fn=predict_fn,
     scorers=[
         # Built-in LLM judge
-        Correctness(model="gemini:/gemini-2.5-flash"),
+        Correctness(model="ollama:/gemma3:4b"),
         # Custom criteria using LLM judge
         Guidelines(
-            model="gemini:/gemini-2.5-flash",
+            model="ollama:/gemma3:4b",
             name="is_english",
             guidelines="The answer must be in English",
         ),
