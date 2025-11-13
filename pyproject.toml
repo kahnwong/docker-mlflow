@@ -12,7 +12,7 @@ dependencies = [
     "mlflow==3.5.1",
     "protobuf==5.29.5", # vuln
     "psycopg2-binary==2.9.11",
-    "requests==2.32.4", # vuln
+    "requests==2.32.5", # vuln
     "starlette>=0.49.1", # vuln
     "urllib3==2.5.0", # vuln
 ]
