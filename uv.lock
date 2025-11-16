@@ -603,7 +603,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "litellm", extras = ["proxy"], specifier = "==1.79.1" },
+    { name = "litellm", extras = ["proxy"], specifier = "==1.80.0" },
     { name = "openai", specifier = ">=2.7.2" },
     { name = "scikit-learn", specifier = "==1.7.2" },
 ]
@@ -1275,7 +1275,7 @@ wheels = [
 
 [[package]]
 name = "litellm"
-version = "1.79.1"
+version = "1.80.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1291,9 +1291,9 @@ dependencies = [
     { name = "tiktoken" },
     { name = "tokenizers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/12/1c30f1019892399a488ed60ebcdfed3e2603123d9591030abc8c702ff37a/litellm-1.79.1.tar.gz", hash = "sha256:c1cf0232c01e7ad4b8442d2cdd78973ce74dfda37ad1d9f0ec3c911510e26523", size = 11216675, upload-time = "2025-11-01T19:22:05.523Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bd/8c/48d533affdbc6d485b7ad4221cd3b40b8c12f9f5568edfe0be0b11e7b945/litellm-1.80.0.tar.gz", hash = "sha256:eeac733eb6b226f9e5fb020f72fe13a32b3354b001dc62bcf1bc4d9b526d6231", size = 11591976, upload-time = "2025-11-16T00:03:51.812Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2f/e4/ac5905dfe9c0c195e59c36ea431277090dd2aa1acbcc514f781fa87a5903/litellm-1.79.1-py3-none-any.whl", hash = "sha256:738f7bf36b31514ac11cc71f65718238b57696fcf22f8b3f1e57c44daf17a569", size = 10285849, upload-time = "2025-11-01T19:22:01.637Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/53/aa31e4d057b3746b3c323ca993003d6cf15ef987e7fe7ceb53681695ae87/litellm-1.80.0-py3-none-any.whl", hash = "sha256:fd0009758f4772257048d74bf79bb64318859adb4ea49a8b66fdbc718cd80b6e", size = 10492975, upload-time = "2025-11-16T00:03:49.182Z" },
 ]
 
 [package.optional-dependencies]
@@ -1318,6 +1318,7 @@ proxy = [
     { name = "pyyaml" },
     { name = "rich" },
     { name = "rq" },
+    { name = "soundfile" },
     { name = "uvicorn" },
     { name = "uvloop", marker = "sys_platform != 'win32'" },
     { name = "websockets" },
@@ -1325,20 +1326,20 @@ proxy = [
 
 [[package]]
 name = "litellm-enterprise"
-version = "0.1.20"
+version = "0.1.21"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e3/ae/5478c23dad4e63b8fb01387a1d17b05c8b62a0182f76101a86eca74104c1/litellm_enterprise-0.1.20.tar.gz", hash = "sha256:f6b8dd75b53bd835c68caf6402a8bae744a150db7bb6b0e617178c6056ac6c01", size = 61379, upload-time = "2025-09-19T02:13:03.204Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/3e/19ccb3302aa3b96acb072b038c594202ac5cff3cf99bb2fe986b690be4c7/litellm_enterprise-0.1.21.tar.gz", hash = "sha256:2e9d9603ecbbced887d5028afd73663c4db7159a0a213f2e69844e8f9e7692b5", size = 143974, upload-time = "2025-11-15T18:30:32.939Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6b/e2/3d113fe5262577d92ca2ace2454ad042be9c01c62bf1e44be4e2d12b2cc5/litellm_enterprise-0.1.20-py3-none-any.whl", hash = "sha256:744a79956a8cd7748ef4c3f40d5a564c61519834e706beafbc0b931162773ae8", size = 120792, upload-time = "2025-09-19T02:13:02.159Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/d4/0aa480b636307a8e1c2dcfd5be2d045d500967c04db00f50189a572329ab/litellm_enterprise-0.1.21-py3-none-any.whl", hash = "sha256:382cf030650a6318155f4b03e0149245706e429345906cde04cb31905eae8398", size = 107004, upload-time = "2025-11-15T18:30:31.958Z" },
 ]
 
 [[package]]
 name = "litellm-proxy-extras"
-version = "0.2.31"
+version = "0.4.5"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/30/ce/007a87b17834c5a24e15798ae32dd156d77528b12f086f4176bb7e3f4401/litellm_proxy_extras-0.2.31.tar.gz", hash = "sha256:6d4c96dfe28fa439eaf4e8d19b73718530bc2c59cd1e4cf560388c6bce5476bb", size = 16648, upload-time = "2025-11-01T01:18:47.596Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9d/89/296bc16e4c42938953fa768555b3308aa25adcbe2f2a218e3043da1b094d/litellm_proxy_extras-0.4.5.tar.gz", hash = "sha256:ad79a4061e06f9a9127e517d153dfbb8a1a91de11873a633de5a984cbcd40070", size = 17864, upload-time = "2025-11-15T03:00:16.459Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/5f/6a0add2cac34a370da62d3bf7476035f5f10519740dfe78410256f8945b1/litellm_proxy_extras-0.2.31-py3-none-any.whl", hash = "sha256:7a66ae2810e451977fb1dfed6dac81971c6a4efbce7d57c896dce280b50ce359", size = 34130, upload-time = "2025-11-01T01:18:46.485Z" },
+    { url = "https://files.pythonhosted.org/packages/97/05/70783bb4dbbb2a57d97c0d0b91122f1b83b8471a654a6dcd66cbb67ca83a/litellm_proxy_extras-0.4.5-py3-none-any.whl", hash = "sha256:917954c2f6d2f940bea8355695d8a17057816f126e898a4fca73b9d56cee09e6", size = 36427, upload-time = "2025-11-15T03:00:15.275Z" },
 ]
 
 [[package]]
@@ -2713,6 +2714,24 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a2/87/a6771e1546d97e7e041b6ae58d80074f81b7d5121207425c964ddf5cfdbd/sniffio-1.3.1.tar.gz", hash = "sha256:f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc", size = 20372, upload-time = "2024-02-25T23:20:04.057Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2", size = 10235, upload-time = "2024-02-25T23:20:01.196Z" },
+]
+
+[[package]]
+name = "soundfile"
+version = "0.12.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6f/96/5ff33900998bad58d5381fd1acfcdac11cbea4f08fc72ac1dc25ffb13f6a/soundfile-0.12.1.tar.gz", hash = "sha256:e8e1017b2cf1dda767aef19d2fd9ee5ebe07e050d430f77a0a7c66ba08b8cdae", size = 43184, upload-time = "2023-02-15T15:37:32.011Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/04/bc/cd845c2dbb4d257c744cd58a5bcdd9f6d235ca317e7e22e49564ec88dcd9/soundfile-0.12.1-py2.py3-none-any.whl", hash = "sha256:828a79c2e75abab5359f780c81dccd4953c45a2c4cd4f05ba3e233ddf984b882", size = 24030, upload-time = "2023-02-15T15:37:16.077Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/73/059c84343be6509b480013bf1eeb11b96c5f9eb48deff8f83638011f6b2c/soundfile-0.12.1-py2.py3-none-macosx_10_9_x86_64.whl", hash = "sha256:d922be1563ce17a69582a352a86f28ed8c9f6a8bc951df63476ffc310c064bfa", size = 1213305, upload-time = "2023-02-15T15:37:18.875Z" },
+    { url = "https://files.pythonhosted.org/packages/71/87/31d2b9ed58975cec081858c01afaa3c43718eb0f62b5698a876d94739ad0/soundfile-0.12.1-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:bceaab5c4febb11ea0554566784bcf4bc2e3977b53946dda2b12804b4fe524a8", size = 1075977, upload-time = "2023-02-15T15:37:21.938Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/bd/0602167a213d9184fc688b1086dc6d374b7ae8c33eccf169f9b50ce6568c/soundfile-0.12.1-py2.py3-none-manylinux_2_17_x86_64.whl", hash = "sha256:2dc3685bed7187c072a46ab4ffddd38cef7de9ae5eb05c03df2ad569cf4dacbc", size = 1257765, upload-time = "2023-03-24T08:21:58.716Z" },
+    { url = "https://files.pythonhosted.org/packages/c1/07/7591f4efd29e65071c3a61b53725036ea8f73366a4920a481ebddaf8d0ca/soundfile-0.12.1-py2.py3-none-manylinux_2_31_x86_64.whl", hash = "sha256:074247b771a181859d2bc1f98b5ebf6d5153d2c397b86ee9e29ba602a8dfe2a6", size = 1174746, upload-time = "2023-02-15T15:37:24.771Z" },
+    { url = "https://files.pythonhosted.org/packages/03/0f/49941ed8a2d94e5b36ea94346fb1d2b22e847fede902e05be4c96f26be7d/soundfile-0.12.1-py2.py3-none-win32.whl", hash = "sha256:59dfd88c79b48f441bbf6994142a19ab1de3b9bb7c12863402c2bc621e49091a", size = 888234, upload-time = "2023-02-15T15:37:27.078Z" },
+    { url = "https://files.pythonhosted.org/packages/50/ff/26a4ee48d0b66625a4e4028a055b9f25bc9d7c7b2d17d21a45137621a50d/soundfile-0.12.1-py2.py3-none-win_amd64.whl", hash = "sha256:0d86924c00b62552b650ddd28af426e3ff2d4dc2e9047dae5b3d8452e0a49a77", size = 1009109, upload-time = "2023-02-15T15:37:29.41Z" },
 ]
 
 [[package]]
