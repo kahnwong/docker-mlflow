@@ -9,7 +9,7 @@ dependencies = [
     "flask==3.1.1", # vuln
     "h11==0.16.0", # vuln
     "jinja2==3.1.6", # vuln
-    "mlflow==3.5.1",
+    "mlflow==3.8.1",
     "protobuf==5.29.5", # vuln
     "psycopg2-binary==2.9.11",
     "requests==2.32.4", # vuln
