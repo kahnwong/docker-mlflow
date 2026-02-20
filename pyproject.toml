@@ -10,7 +10,7 @@ dependencies = [
     "cryptography>=44.0.1", # vuln
     "filelock>=3.20.1", # vuln
     "fonttools>=4.60.2", # vuln
-    "mlflow==3.8.1",
+    "mlflow==3.10.0",
     "psycopg2-binary==2.9.11",
     "urllib3>=2.6.0", # vuln
     "werkzeug>=3.1.4", # vuln
