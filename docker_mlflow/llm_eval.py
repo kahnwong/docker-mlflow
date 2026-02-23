@@ -1,17 +1,15 @@
+import os
+
 import mlflow
 from mlflow.genai.scorers import Correctness, Guidelines
 from openai import OpenAI
 
-# start model via: <llama-server -hf ggml-org/gemma-3-1b-it-GGUF>
-
 # ----- for inference -----
-BASE_URL = "http://localhost:8080/v1"
-API_KEY = ""
-MODEL_NAME = "gemma3:270m"
+MODEL_NAME = "claude-haiku-4-5"
 
 client = OpenAI(
-    base_url=BASE_URL,
-    api_key=API_KEY,
+    base_url=os.getenv("OPENAI_BASE_URL"),
+    api_key=os.getenv("OPENAI_API_KEY"),
 )
 
 
@@ -48,10 +46,9 @@ results = mlflow.genai.evaluate(
     predict_fn=predict_fn,
     scorers=[
         # Built-in LLM judge
-        Correctness(model="ollama:/gemma3:4b"),
+        Correctness(),
         # Custom criteria using LLM judge
         Guidelines(
-            model="ollama:/gemma3:4b",
             name="is_english",
             guidelines="The answer must be in English",
         ),

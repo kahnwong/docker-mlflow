@@ -4,6 +4,7 @@
 # mlflow
 mlruns
 mlartifacts
+mlflow.db
 
 # env
 .env
