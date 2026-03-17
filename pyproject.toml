@@ -14,7 +14,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "litellm[proxy]==1.81.1",
+    "litellm[proxy]==1.82.3",
     "openai>=2.21.0",
     "scikit-learn==1.8.0",
 ]
