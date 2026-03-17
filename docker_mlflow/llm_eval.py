@@ -39,16 +39,18 @@ def predict_fn(question: str) -> str:
 
 
 # ----- evaluation -----
-## use ollama via litellm
 mlflow.set_experiment("LLM Evaluation")
+
+judge_model = f"openai:/{MODEL_NAME}"
 results = mlflow.genai.evaluate(
     data=dataset,
     predict_fn=predict_fn,
     scorers=[
         # Built-in LLM judge
-        Correctness(),
+        Correctness(model=judge_model),
         # Custom criteria using LLM judge
         Guidelines(
+            model=judge_model,
             name="is_english",
             guidelines="The answer must be in English",
         ),
