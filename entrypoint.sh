@@ -61,8 +61,8 @@ if [ $READ_PERMISSION -eq 0 ] && [ $WRITE_PERMISSION -eq 0 ]; then
 	################################
 	postgres_uri="postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE"
 
-	mlflow db upgrade "$postgres_uri"
-	mlflow server \
+	uv run mlflow db upgrade "$postgres_uri"
+	uv run mlflow server \
 		--backend-store-uri "$postgres_uri" \
 		--artifacts-destination "$DEFAULT_ARTIFACT_ROOT" \
 		--host 0.0.0.0 \
