@@ -18,6 +18,6 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "litellm[proxy]==1.83.14",
+    "litellm[proxy]==1.85.0",
     "scikit-learn==1.8.0",
 ]
