@@ -545,7 +545,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "litellm", extras = ["proxy"], specifier = "==1.89.2" },
+    { name = "litellm", extras = ["proxy"], specifier = "==1.90.1" },
     { name = "scikit-learn", specifier = "==1.9.0" },
 ]
 
@@ -1159,7 +1159,7 @@ wheels = [
 
 [[package]]
 name = "litellm"
-version = "1.89.2"
+version = "1.90.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1175,9 +1175,9 @@ dependencies = [
     { name = "tiktoken" },
     { name = "tokenizers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c1/29/865d38325f9c424daf0bcc7ab61908cf51a87862b3a0dfebd059b60dac97/litellm-1.89.2.tar.gz", hash = "sha256:b2534d69568eed026310f4e006407db2d46494eb629bd1e71eb9603ec146540d", size = 14079449, upload-time = "2026-06-18T02:26:03.64Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/36/1e/b079ec9b840bac7573c33fa06c075414616c19ac0adde06ec4cb694cbc9f/litellm-1.90.1.tar.gz", hash = "sha256:a0c79d9efa1dbc031371348540466240216c898c68687d4c2de1343ca3ac3dd0", size = 14818439, upload-time = "2026-06-30T01:43:41.558Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/c8/51c93e8d017e7af02600171b5b6cc3805b07507acb2b94de7235ce764015/litellm-1.89.2-py3-none-any.whl", hash = "sha256:07e8e43b1a70fe919021376742897d18ffe7577ccfbb84632c949670f9abdc03", size = 15492797, upload-time = "2026-06-18T02:25:59.863Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/86/86063e003e0ca31f8304a5ba808d51d91b959512b33b6cab5e0c55e936e8/litellm-1.90.1-py3-none-any.whl", hash = "sha256:d90482c7f3a7dfa3f4d88b255cb4e1e60793d7452efcc0fe461a719df52c283e", size = 16611651, upload-time = "2026-06-30T01:43:38.154Z" },
 ]
 
 [package.optional-dependencies]
@@ -1215,11 +1215,11 @@ proxy = [
 
 [[package]]
 name = "litellm-enterprise"
-version = "0.1.42"
+version = "0.1.43.post1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/93/fe/fb60dd7bbb88fa65818e70f5f21cdabfe1c5df2302d9dda9bc46ac4fe4d9/litellm_enterprise-0.1.42.tar.gz", hash = "sha256:ec2170d9627a715aa038537a07af8053e6826e115ff6162a41af25d2990f3b2e", size = 70623, upload-time = "2026-05-31T04:12:10.667Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0c/10/dd539344b6a7880de8dd1e547b5faa6c9308196520d6936daac4fcb9fac5/litellm_enterprise-0.1.43.post1.tar.gz", hash = "sha256:9a5522bf9db0f2198ba5fde23abcd657b643b64842a7a1d5b3444ef6a0b2871d", size = 71298, upload-time = "2026-06-30T01:43:23.799Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0a/45/a6a56c510779b633e18fc5403aa82388fd6f0833132725bcb756d68cb0f5/litellm_enterprise-0.1.42-py3-none-any.whl", hash = "sha256:1014e38445d7a79d3638061504def42640719903b89a493b68806ba6e2f75fe7", size = 137906, upload-time = "2026-05-31T04:12:09.714Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/67/350fe5a97bfd2a990a9c7970e66a073ee543a3b9b1b6d645d05fd3b853a9/litellm_enterprise-0.1.43.post1-py3-none-any.whl", hash = "sha256:fb0a024d537408fb95b67d04869d4feada93bb6848024bd3d35e3632eb0947ee", size = 138319, upload-time = "2026-06-30T01:43:22.605Z" },
 ]
 
 [[package]]
@@ -1973,11 +1973,11 @@ wheels = [
 
 [[package]]
 name = "pyjwt"
-version = "2.12.0"
+version = "2.13.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a8/10/e8192be5f38f3e8e7e046716de4cae33d56fd5ae08927a823bb916be36c1/pyjwt-2.12.0.tar.gz", hash = "sha256:2f62390b667cd8257de560b850bb5a883102a388829274147f1d724453f8fb02", size = 102511, upload-time = "2026-03-12T17:15:30.831Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/81/58d0ac84e1ef3a3843791d6954d94c0b33d526c75eeb1efbce9d0a4c4077/pyjwt-2.13.0.tar.gz", hash = "sha256:41571c89ca91598c79e8ef18a2d07367d4810fbbd6f637794879baf1b7703423", size = 107515, upload-time = "2026-05-21T19:54:36.618Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/15/70/70f895f404d363d291dcf62c12c85fdd47619ad9674ac0f53364d035925a/pyjwt-2.12.0-py3-none-any.whl", hash = "sha256:9bb459d1bdd0387967d287f5656bf7ec2b9a26645d1961628cda1764e087fd6e", size = 29700, upload-time = "2026-03-12T17:15:29.257Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl", hash = "sha256:66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728", size = 31274, upload-time = "2026-05-21T19:54:35.362Z" },
 ]
 
 [package.optional-dependencies]
