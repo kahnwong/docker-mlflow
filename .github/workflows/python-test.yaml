@@ -2,7 +2,7 @@ name: Python Test
 on:
   pull_request:
     paths-ignore:
-      - '.github/**'
+      - ".github/**"
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -10,7 +10,7 @@ jobs:
   python-test:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v7
       - name: Setup uv
@@ -18,6 +18,6 @@ jobs:
         with:
           enable-cache: true
           cache-python: true
-      - name: Run mlflow pipeline
+      - name: Run tests
         run: |
           uv run docker_mlflow/experiment_tracking.py
